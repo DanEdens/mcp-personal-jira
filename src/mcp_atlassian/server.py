@@ -21,9 +21,9 @@ def get_available_services():
     """Determine which services are available based on environment variables."""
     confluence_vars = all(
         [
-            os.getenv("CONFLUENCE_URL"),
-            os.getenv("CONFLUENCE_USERNAME"),
-            os.getenv("CONFLUENCE_API_TOKEN"),
+            os.getenv("JiraDomain"),
+            os.getenv("JiraEmail"),
+            os.getenv("JIRA_API_TOKEN"),
         ]
     )
 

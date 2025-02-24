@@ -15,9 +15,9 @@ class ConfluenceFetcher:
     """Handles fetching and parsing content from Confluence."""
 
     def __init__(self):
-        url = os.getenv("CONFLUENCE_URL")
-        username = os.getenv("CONFLUENCE_USERNAME")
-        token = os.getenv("CONFLUENCE_API_TOKEN")
+        url = os.getenv("JiraDomain") + "/wiki"
+        username = os.getenv("JiraEmail")
+        token = os.getenv("JIRA_API_TOKEN")
 
         if not all([url, username, token]):
             raise ValueError("Missing required Confluence environment variables")

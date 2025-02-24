@@ -49,16 +49,16 @@ def main(
         load_dotenv()
 
     # Set environment variables from command line arguments if provided
-    if confluence_url:
-        os.environ["CONFLUENCE_URL"] = confluence_url
-    if confluence_username:
-        os.environ["CONFLUENCE_USERNAME"] = confluence_username
-    if confluence_token:
-        os.environ["CONFLUENCE_API_TOKEN"] = confluence_token
+    # if confluence_url:
+    #     os.environ["JiraDomain"] = confluence_url
+    # if confluence_username:
+    #     os.environ["JiraEmail"] = confluence_username
+    # if confluence_token:
+    #     os.environ["JIRA_API_TOKEN"] = confluence_token
     if jira_url:
-        os.environ["JIRA_URL"] = jira_url
+        os.environ["JiraDomain"] = jira_url
     if jira_username:
-        os.environ["JIRA_USERNAME"] = jira_username
+        os.environ["JiraEmail"] = jira_username
     if jira_token:
         os.environ["JIRA_API_TOKEN"] = jira_token
 
